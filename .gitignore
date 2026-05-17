@@ -1,0 +1,127 @@
+# =============================================================================
+# .gitignore — case-meliuz-pm-shopping
+# Política: commitar tudo que é entrega ou prova; ignorar dado derivado pesado,
+# caches, segredos e lixo do SO/editor.
+# =============================================================================
+
+# -------------------- Arquivos de operação interna --------------------
+# Scripts e guias que o owner do repo usa para PUBLICAR o projeto no
+# GitHub. O recrutador / qualquer pessoa que clone não precisa disso —
+# eles existem só na máquina do dono do repo.
+setup_github.sh
+GITHUB_SETUP.md
+COMMIT_MESSAGE.txt
+
+# -------------------- Dados derivados volumosos --------------------
+# Esses CSVs são gerados pela pipeline em ~2 minutos. Não fazem parte da
+# entrega; manter no repo aumentaria muito o tamanho do clone (~600 MB).
+outputs/visits_enriched.csv
+outputs/base_visit_level_abc.csv
+
+# Mantemos versionados:
+#   outputs/resumo_*.csv
+#   outputs/ztest_*.csv
+#   outputs/bootstrap_*.csv
+#   outputs/graficos/*.png
+
+# -------------------- Logs e relatórios temporários do agente --------------------
+# Os relatórios validados que ficaram (agent_report*.md, log_execucao_real.txt)
+# devem ser commitados como evidência. Aqui ignoramos os "rascunhos" comuns.
+agent_autonomo/outputs/tmp_*
+agent_autonomo/outputs/draft_*
+agent_autonomo/outputs/smoke_test.md
+agent_autonomo/outputs/*.tmp
+
+# -------------------- Python --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# -------------------- Virtualenvs --------------------
+.venv/
+venv/
+env/
+ENV/
+
+# -------------------- Credenciais e segredos --------------------
+# Anthropic API key, GitHub tokens etc. — NUNCA commitar.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.json
+credentials.json
+
+# -------------------- Jupyter --------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# -------------------- Sistemas operacionais --------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Windows (caso alguém clone no WSL)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -------------------- Editores e IDEs --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+*.sublime-workspace
+*.sublime-project
+
+# -------------------- Node (caso futuro use marked.js local etc.) --------------------
+node_modules/
+package-lock.json
+yarn.lock
+.npm/
+
+# -------------------- Outros --------------------
+# Logs locais
+*.log
+logs/
+
+# Backups acidentais
+*.bak
+*.backup
+*.old
+
+# Arquivos de patch
+*.orig
+*.rej
