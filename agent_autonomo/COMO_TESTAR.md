@@ -34,7 +34,13 @@ clonado**. Onde aparece `<repo>`, leia "a pasta onde você clonou".
 
 ## Passo 1 · Conseguir uma API key da Anthropic
 
-Se você ainda não tem:
+> **Atalho para o time de avaliação:** se você quer testar o agente mas
+> não tem uma conta da Anthropic com créditos, me mande um e-mail
+> (**matheuslopescarvalho@gmail.com**) que eu envio uma chave temporária
+> de uma conta que carreguei com créditos especificamente para este case.
+> Você roda em ~3 minutos sem custo nenhum.
+
+Se preferir usar uma conta sua:
 
 1. Acesse <https://console.anthropic.com/>.
 2. Crie a conta com o email que usa.

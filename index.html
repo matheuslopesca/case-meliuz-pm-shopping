@@ -188,6 +188,10 @@
 
 
 
+
+
+
+
 /* MD-VIEWER-CSS-START */
 /* ==================== MARKDOWN VIEWER ==================== */
 .md-modal {
@@ -666,7 +670,7 @@
           <li>NPS Shopping: estável ou melhor</li>
         </ul>
         <div class="links-row">
-          <a class="detail-link" href="./entrega_2/PLANO_DE_TESTE.md" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');">Ver plano de teste completo</a>
+          <a class="detail-link" href="./entrega_2/PLANO_DE_TESTE.md" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');" onclick="return openMd('md-plano-teste', 'Plano de Teste A/B (Teste D)', './entrega_2/PLANO_DE_TESTE.md');">Ver plano de teste completo</a>
         </div>
       </div>
     </details>
@@ -868,6 +872,10 @@ python3 analise/01_explore.py &amp;&amp; python3 analise/02_metrics.py &amp;&amp
   </footer>
 
 </div>
+
+
+
+
 
 
 
@@ -2826,6 +2834,51 @@ repo/
 
 ## Como reproduzir do zero
 
+### Pré-requisito · Instalar Python 3.10+ e pip3
+
+Confira primeiro se já tem (no Terminal/PowerShell):
+
+```bash
+python3 --version    # deve mostrar 3.10 ou superior
+pip3 --version
+```
+
+Se algum desses comandos não funcionar, instale pelo método mais simples
+do seu sistema:
+
+**macOS** — via [Homebrew](https://brew.sh):
+
+```bash
+brew install python
+```
+
+**Linux (Ubuntu / Debian / WSL):**
+
+```bash
+sudo apt update && sudo apt install -y python3 python3-pip
+```
+
+**Linux (Fedora / RHEL):**
+
+```bash
+sudo dnf install -y python3 python3-pip
+```
+
+**Windows** — caminho mais simples sem terminal:
+
+1. Abra a **Microsoft Store**, busque `Python 3.12` (ou superior) e clique
+   em **Get / Obter**.
+2. Abra o **PowerShell** e confirme: `python --version` e `pip --version`.
+
+> Alternativa: baixar o instalador oficial em
+> <https://www.python.org/downloads/windows/> e, na primeira tela,
+> **marcar "Add Python to PATH"** antes de clicar em *Install Now*.
+
+> No Windows, os comandos abaixo trocam `python3` por `python` e `pip3`
+> por `pip`. O resto é igual.
+
+### Pipeline
+
 ```bash
 # 1. Clonar o repositório (se ainda não o fez)
 git clone https://github.com/matheuslopesca/case-meliuz-pm-shopping.git
@@ -2910,6 +2963,14 @@ canônico do squad.
 > de grandeza mais barato** em casos repetitivos — o que justifica usá-lo
 > para monitoria contínua, mantendo o workflow humano em `/agent` para casos
 > novos e ambíguos.
+
+### Precisa de uma API key da Anthropic para testar o agente?
+
+Se você for da equipe de avaliação e quiser executar o agente autônomo
+mas não tem uma conta da Anthropic com créditos, **me avise por e-mail
+(matheuslopescarvalho@gmail.com)**. Forneço uma chave temporária de uma
+conta que carreguei com créditos especificamente para este teste — o
+custo total previsto está coberto.
 
 ---
 
